@@ -6,12 +6,16 @@ This project automates basic Linux server configuration using Ansible.
 ## Features
 - Package installation (Git, Docker)
 - Service management
-- Scalable configuration
+- Basic server configuration automation
 
 ## Tech Used
 - Ansible
 - Linux
-- AWS (for target servers)
+
+## Learning Scope
+- Understanding Ansible playbooks and inventory
+- Automating repetitive system administration tasks
+- Foundation for future cloud and DevOps automation
 
 ## Author
 Sudhanshu Mishra
