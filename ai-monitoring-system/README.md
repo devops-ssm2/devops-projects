@@ -230,16 +230,22 @@ yes > /dev/null &
 
 > Add:
 
-* Grafana dashboard 📊
-![alt text](image.png)
-* Alert email 📧
-![alt text](image-3.png)
-![alt text](image-4.png)
-* Prometheus Dashboard 📊
-![alt text](image-1.png)
-![alt text](image-2.png)
-* Flask logs 🤖
-![alt text](image-5.png)
+### Grafana dashboard 📊
+![Grafana](image.png)
+
+### Alert email 📧
+<p align="center">
+  <img src="image-7.png" width="45%" />
+  <img src="image-6.png" width="45%" />
+</p>
+
+### Prometheus Dashboard 📊
+![Prometheus](image-1.png)
+![Prometheus](image-2.png)
+
+### Flask logs 🤖
+![Logs](image-5.png)
+
 ---
 
 ## 🔐 Security Note
