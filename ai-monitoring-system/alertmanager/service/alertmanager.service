@@ -1,0 +1,15 @@
+[Unit]
+Description=Alertmanager
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=root
+ExecStart=/usr/local/bin/alertmanager \
+  --config.file=/path/to/alertmanager.yml \
+  --storage.path=/var/lib/alertmanager
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

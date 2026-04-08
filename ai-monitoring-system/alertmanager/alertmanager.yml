@@ -1,0 +1,25 @@
+global:
+  smtp_smarthost: 'smtp.gmail.com:587'
+  smtp_from: 'your-email@gmail.com'
+  smtp_auth_username: 'your-email@gmail.com'
+  smtp_auth_password: 'your-app-password'
+
+route:
+  receiver: "email-alert"
+  group_wait: 10s
+  group_interval: 30s
+  repeat_interval: 1h
+
+  routes:
+    - receiver: "ai-webhook"
+
+receivers:
+  - name: "email-alert"
+    email_configs:
+      - to: "your-email@gmail.com"
+        send_resolved: true
+
+  - name: "ai-webhook"
+    webhook_configs:
+      - url: "http://192.168.1.9:5001/alert"
+        send_resolved: true
